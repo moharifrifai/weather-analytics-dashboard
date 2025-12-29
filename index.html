@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Weather Analytics Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    .controls {
+      margin-bottom: 20px;
+    }
+
+    select {
+      padding: 8px;
+      font-size: 14px;
+    }
+
+    .cards {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: #fff;
+      padding: 15px;
+      border-radius: 8px;
+      min-width: 150px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    canvas {
+      background: #fff;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Weather Analytics Dashboard</h1>
+
+  <div class="controls">
+    <label for="city">Select City:</label>
+    <select id="city">
+      <option value="-6.2,106.8">Jakarta</option>
+      <option value="35.6,139.7">Tokyo</option>
+      <option value="51.5,-0.1">London</option>
+    </select>
+  </div>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Avg Temp</h3>
+      <p id="avgTemp">-</p>
+    </div>
+    <div class="card">
+      <h3>Max Temp</h3>
+      <p id="maxTemp">-</p>
+    </div>
+    <div class="card">
+      <h3>Min Temp</h3>
+      <p id="minTemp">-</p>
+    </div>
+  </div>
+
+  <canvas id="tempChart" height="120"></canvas>
+
+  <script src="app.js"></script>
+</body>
+</html>
