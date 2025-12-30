@@ -81,7 +81,7 @@ https://api.open-meteo.com/v1/forecast?latitude=-6.2&longitude=106.8&daily=tempe
 No installation required.
 
 1. Clone the repository:
-```git clone https://github.com/USERNAME/weather-analytics-dashboard.git```
+```git clone https://github.com/moharifrifai/weather-analytics-dashboard.git```
 
 2. Open index.html in your browser, or
 3. Run with a local server (optional):
